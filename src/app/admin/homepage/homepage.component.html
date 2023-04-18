@@ -1,0 +1,41 @@
+<div class="homepageContainer">
+
+    <div class="homepageHeader">
+        <h2>MyApp</h2>
+        <div class="logoutButtonStatus">
+            <app-buttontag [classInfo]="'p-button-raised'" [label]="' Log out '" [buttonType]="'button'"
+                (buttonStatus)="logout()"></app-buttontag>
+        </div>
+    </div>
+
+    <div class="part1Container">
+        <div class="homesubContainer">
+
+            <div class="homesubheaderContainer">
+                <h2>Bio Data</h2>
+            </div>
+
+            <div class="bioFormContainer">
+            
+                <div class="bioDataPart">
+                    <app-textareatag [bioformGroup]="bioDataFrom" [formControlerName]="'myBioData'" [numberOfRows]="'5'"
+                        [numberOfCols]="'30'"></app-textareatag>
+                </div>
+
+                <div class="BioDataButtonPart">
+                    <app-buttontag [classInfo]="'p-button-raised'" [label]="' Save '" [loadingStatus]="bioDataButtonLoad"
+                        [buttonType]="'submit'" (buttonStatus)="submitBioDetails()"
+                        [disabledInfo]="bioDataFrom.invalid"></app-buttontag>
+                </div>
+        </div>
+
+
+
+    </div>
+        
+
+
+    </div>
+
+
+</div>

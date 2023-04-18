@@ -1,0 +1,54 @@
+<div class="signinContainer">
+
+    <div class="subContainer">
+
+        <div class="headerContainer">
+            <h2>Login</h2>
+            <div class="headerSocialMediaPart">
+                <ul>
+                    <li><i class="pi pi-google"></i></li>
+                    <li><i class="pi pi-twitter"></i></li>
+                    <li><i class="pi pi-facebook"></i></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="formContainer">
+            <div class="userNamePart">
+                <app-inputtagwithicon [formGroupInfo]="loginForm" [iconStyle]="'bi bi-person-fill'" [inputType]="'text'" style="width:100%"
+                    [iconPosition]="'p-input-icon-left'" [placeholderText]="'Username'"
+                    [formControlNameInfo]="'userName'"></app-inputtagwithicon>
+            </div>
+            <div class="passwordPart">
+                <app-inputtagwithicon [formGroupInfo]="loginForm" [iconStyle]="'bi bi-lock-fill'" [inputType]="'password'"
+                    style="width:100%" [iconPosition]="'p-input-icon-left'" [placeholderText]="'Password'"
+                    [formControlNameInfo]="'password'"></app-inputtagwithicon>
+            </div>
+
+            <div class="buttonsPart">
+                <div class="loginButtonPart">
+                            <app-buttontag [classInfo]="'p-button-raised'" [label]="' Log In '" [loadingStatus]="signInButtonLoadStatus"
+                                [buttonType]="'submit'" (buttonStatus)="submitSignInDetails(loginForm.value)"
+                                [disabledInfo]="loginForm.invalid"></app-buttontag>
+                  </div>
+
+                  <div class="forgotPasswordStyle">
+                            <a href="#">Forgot Password?</a>
+                  </div>
+
+            </div>
+
+            <div class="signupTextStyle">
+                    <h2>Don't have an account?<a href="#">Signup</a></h2>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+</div>

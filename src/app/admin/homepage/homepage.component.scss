@@ -1,0 +1,164 @@
+ @import '../../../global.scss';
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+ .homepageContainer {
+     width: 100vw;
+     height: 100vh;
+     background: url('../../../assets/images/background.jpg');
+     background-size: cover;
+     background-position: center;
+
+ }
+
+ .homepageHeader {
+     width: 100%;
+     height: 4rem;
+     background-color: #262626;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 30px;
+
+ }
+
+ .homepageHeader h2 {
+     font-family: $fontFamily;
+     font-size: 1.3rem;
+     line-height: 54px;
+     color: #fff;
+     position: relative;
+     z-index: 100;
+ }
+
+ .homepageHeader h2::first-letter {
+     color: #6f9a37;
+    font-size: 1.5rem;
+
+ }
+
+
+
+ .logoutButtonStatus {
+     width: fit-content;
+     height: 2.5rem;
+ }
+
+
+ .part1Container{
+    width: 100%;
+    height: 90%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+ .homesubContainer {
+    height: 25rem;
+    width: 350px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    background: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    
+
+}
+
+.BioDataButtonPart{
+    
+    width: 7.5rem;
+    height: 3rem;
+
+}
+
+.homesubheaderContainer {
+    background: linear-gradient(90deg, #007bff, #0052ea);
+    box-shadow: 0 4px 20px 0 rgb(0 123 255 / 14%), 0 7px 10px -5px rgb(0 82 234 / 40%);
+    margin: -2rem 1rem 2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #fff;
+    height: 5rem;
+    width: 20rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    top: -27px;
+}
+.homesubheaderContainer h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $fontFamily;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+.bioFormContainer{
+       width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.bioDataPart{
+    width: 18rem;
+    height: 12rem;
+}
+
+
+
+
+
+ ::ng-deep {
+
+     .logoutButtonStatus {
+
+         .p-button {
+             color: #ffffff;
+             background: #6f9a37;
+             border: 1px solid #6f9a37;
+             padding: 0.75rem 1.25rem;
+             font-size: 1rem;
+             transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+             border-radius: 6px;
+         }
+
+     }
+
+     .BioDataButtonPart {
+        .p-button.p-button-raised {
+            box-shadow: 0 4px 20px 0 rgb(0 123 255 / 14%), 0 7px 10px -5px rgb(0 82 234 / 40%);
+            font-family: $fontFamily;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            border-radius: 0.3125rem;
+
+
+        }
+    }
+
+ }
